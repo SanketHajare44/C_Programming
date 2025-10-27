@@ -14,6 +14,7 @@ bool Check(int iNo)
         return false;
     }
 }
+
 int main()
 {
     int iValue = 0;
