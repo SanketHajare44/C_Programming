@@ -12,7 +12,7 @@
 //
 //  Function name : Display
 //  Description :   It is used Display * on screen 
-//  Input :         
+//  Input :         Integer
 //  Output :        void
 //  Author :        Sanket Sadashiv Hajare
 //  Date :          16/10/2025
