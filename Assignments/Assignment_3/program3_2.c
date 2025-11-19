@@ -36,7 +36,6 @@ void DisplayFactor(int iNo)
         }
     }
     printf("\n");
-
 }// End DisplayFactor Function
 
 /////////////////////////////////////////////////////////////////
