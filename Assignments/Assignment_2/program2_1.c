@@ -1,0 +1,71 @@
+//  Accept one number from user and print that number of * on screen.
+
+/////////////////////////////////////////////////////////////////
+//
+//  Required header files
+//
+/////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+
+/////////////////////////////////////////////////////////////////
+//
+//  Function name : Display
+//  Description :   It is used Display * on screen 
+//  Input :         
+//  Output :        void
+//  Author :        Sanket Sadashiv Hajare
+//  Date :          16/10/2025
+//
+/////////////////////////////////////////////////////////////////
+
+void Display(int iNo)
+{
+    int iCnt = 0;
+    iCnt = 1;
+
+    if(iNo<0)                   // Updater
+    {
+        iNo = -iNo;
+    }
+
+    while(iCnt <= iNo)          // Business logic
+    {
+        printf("*");
+        iCnt++;
+    }
+    printf("\n");
+
+}// End Display Function
+
+/////////////////////////////////////////////////////////////////
+//
+//  Time Complexity : O(N)
+//
+/////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////
+//
+//  Entry point function for the application
+//
+/////////////////////////////////////////////////////////////////
+
+int main()
+{
+    int iValue = 0;             // To accept user input
+
+    printf("Enter number : \n");
+    scanf("%d",&iValue);
+
+    Display(iValue);            // Function call
+
+    return 0;
+}// End main function
+
+/////////////////////////////////////////////////////////////////
+//
+//  Test cases succesfully handled by the application
+//
+//  Input : 6    Output : * * * * * *
+//
+/////////////////////////////////////////////////////////////////
