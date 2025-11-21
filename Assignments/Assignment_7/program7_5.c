@@ -1,0 +1,72 @@
+//Write a program which accept N and Print first 5 multiples of N.
+
+///////////////////////////////////////////////////////////////////////////////
+//
+//  Requied header files
+//
+///////////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+
+///////////////////////////////////////////////////////////////////////////////
+//
+//  Function name : MultipleDisplay
+//  Description :   It is use to Print first 5 multiples of N.
+//  Input :         Integer
+//  Output :        Void
+//  Author :        Sanket Sadashiv Hajare
+//  Date :          21/10/2025
+//
+///////////////////////////////////////////////////////////////////////////////
+
+void MultipleDisplay(int iNo)
+{
+    int iCnt = 0;
+
+    if(iNo < 0)                             // Updater          
+    {
+        iNo = -iNo;
+    }
+
+    for(iCnt = 1; iCnt <=5; iCnt++)
+    {
+        printf("%d\t ",iNo*iCnt);           // Business logic
+    }
+    printf("\n");
+
+}// End of MultipleDisplay function
+
+///////////////////////////////////////////////////////////////////////////////
+//
+//  Time Complexity : O(1)
+//
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+//
+//  Entry point function for the application
+//
+///////////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    int iValue = 0;                         // To accept user input
+
+    printf("Enter number :\n");
+    scanf("%d",&iValue);
+
+    MultipleDisplay(iValue);                // Function call
+
+    return 0;
+}// End of main
+
+///////////////////////////////////////////////////////////////////////////////
+//
+//  Testcases successfully handled by the application
+//
+//  Input1 = 4                     Output = 4   8   12   16   20
+//  Input1 = 7                     Output = 7   14  21   28   35
+//  Input1 = 1                     Output = 1   2   3    4    5
+//  Input1 = 0                     Output = 0   0   0    0    0
+//
+///////////////////////////////////////////////////////////////////////////////
